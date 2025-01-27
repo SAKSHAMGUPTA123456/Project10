@@ -54,7 +54,7 @@ wind.innerText=data.main.wind
 pressure.innerText=data.main.pressure
     }
     catch(err){
-console.log(err)
+        alert('city you had written is invalid')
     }
 })
 clicksearch.onclick=()=>{
