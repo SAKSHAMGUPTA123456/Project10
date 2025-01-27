@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather app</title>
+   <script src="https://cdn.tailwindcss.com"></script>
+<style>
+    body{
+        background-color: rgba(0, 0, 0, 0.857);
+    }
+    #background-video {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+    </style>
+    
+</head>
+<body>
+    <video autoplay loop  muted id="background-video">
+        <source src="">
+    </video>
+<div class="mt-36 flex justify-center">
+    <div class="bg-white h-[490px]  w-60 sm:w-96" style="border: 2px solid black; border-radius: 20px;">
+        <br>
+        <div class=" sm:ml-6">
+            <div></div>
+            <div class="flex"><input type="" style=" color: aliceblue; border-radius: 5px;  background-color: rgba(0, 0, 0, 0.765);" placeholder="search the city" id="search">
+            <img src="images and videos/icons8-search-50.png" style="width: 20px;   background-color: rgba(0, 0, 0, 0.765);" id="clicksearch"></div>
+           <div></div>
+           <div></div>
+        </div>
+<br>
+        <div class="flex justify-center">
+            <div id="cityy" style="font-weight: bold;"></div>
+        </div>
+        <div class="flex justify-center">
+            <div id="date"></div>
+            </div>
+            <div class="flex justify-center">
+                <div><button id="weather" style="background-color: black; color: aliceblue; width: 50px; border-radius: 20px;"></button></div>
+                </div>
+                <div class="flex justify-center">
+<div><img src=""></div>
+                    </div>
+                <div class="flex justify-center">
+                    <div id="temperature"></div>
+                    </div>
+                    <br>
+                    <div class="flex justify-center ">
+                        <div>Min:</div>
+                        <div id="min"></div>
+                        <div class="ml-3">Max:</div>
+                        <div id="max"></div>
+                        </div>
+                        <div style=" background-color: rgba(255, 255, 255, 0.681);" class="grid grid-cols-2 mt-7">
+                            <div style=" border-radius: 8px;  border: 2px solid white;    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);" class="flex">
+<div class="ml-3"><img src="images and videos/thermometer.png" class="w-6 mt-4 h-5"></div>
+<div class="ml-3">
+    <div>Feels like</div>
+    <div id="fel"></div>
+</div>
+
+   </div>
+  <div style=" border-radius: 8px;  border: 2px solid white;    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);" class="flex">
+   <div class="ml-3"><img src="images and videos/humidity.png" class="w-6 mt-4 h-5"></div>
+   <div class="ml-3">
+   <div>Humidity</div>
+  <div id="humidity"></div>
+   </div>
+                                
+   </div>
+  <div style="border-radius: 8px; border: 2px solid white;    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);" class="flex">
+<div class="ml-3"><img src="images and videos/wind.png" class="w-6 h-5 mt-4"></div>
+<div class="ml-3">
+<div>Wind</div>
+ <div id="wind"></div>
+  </div>
+                                                                
+  </div>
+ <div style=" border-radius: 8px;  border: 2px solid white;    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);" class="flex">
+  <div class="ml-3"><img src="images and videos/pressure-gauge.png" class="w-6 h-5 mt-4"></div>
+   <div class="ml-3">
+   <div>Pressure</div>
+  <div id="pressure"></div>
+</div>
+ </div>
+</div>
+</div>
+</div>
+
+
+        <script src="weather.js"></script>
+</body>
+</html>
