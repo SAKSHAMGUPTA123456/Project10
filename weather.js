@@ -50,11 +50,12 @@ min.innerText=data.main.temp_min
 max.innerText=data.main.temp_max
 fel.innerText=data.main.feels_like
 humidity.innerText=data.main.humidity
-wind.innerText=data.main.wind
+wind.innerText=data.main.sea_level
 pressure.innerText=data.main.pressure
     }
     catch(err){
-        alert('city you had written is invalid')
+        alert('you had written wrong city')
+       console.log(err)
     }
 })
 clicksearch.onclick=()=>{
